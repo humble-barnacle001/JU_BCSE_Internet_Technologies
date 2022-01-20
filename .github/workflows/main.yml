@@ -32,14 +32,16 @@ jobs:
         steps:
             - name: Checkout main branch
               uses: actions/checkout@v2.4.0
+            - name: Copy README
+              run: |
+                  mkdir build
+                  cp LICENSE build/LICENSE
+                  cp README.md build/README.md
             - name: Download a Build Artifact
               uses: actions/download-artifact@v2.1.0
               with:
                   name: build
-            - name: Copy README
-              run: |
-                  cp LICENSE build/LICENSE
-                  cp README.md build/README.md
+                  path: build
             - name: List files
               working-directory: build
               run: |
