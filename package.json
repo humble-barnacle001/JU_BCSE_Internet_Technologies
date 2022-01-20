@@ -16,5 +16,8 @@
     "bugs": {
         "url": "https://github.com/humble-barnacle001/JU_BCSE_Internet_Technologies/issues"
     },
-    "homepage": "https://github.com/humble-barnacle001/JU_BCSE_Internet_Technologies#readme"
+    "homepage": "https://github.com/humble-barnacle001/JU_BCSE_Internet_Technologies#readme",
+    "dependencies": {
+        "md-to-pdf": "^5.0.1"
+    }
 }
