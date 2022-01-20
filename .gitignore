@@ -129,4 +129,5 @@ dmypy.json
 .pyre/
 
 # Generated documentation
+node_modules
 *.pdf
