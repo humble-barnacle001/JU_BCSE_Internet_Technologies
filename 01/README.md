@@ -1,5 +1,7 @@
 # Assignment 1
 
+[View Report](Report.pdf)
+
 **Objective:** Implement a key-value store using socket programming.
 
 **Name:** Rwitick Ghosh
