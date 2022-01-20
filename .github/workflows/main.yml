@@ -3,6 +3,11 @@ name: Build Reports
 on:
     push:
         branches: [main]
+        paths:
+            - '**.md'
+            - '**.sh'
+            - '**.yml'
+            - '**/img/**'
     workflow_dispatch:
 
 jobs:
