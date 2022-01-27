@@ -1,10 +1,11 @@
 {
     "name": "internet",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "main": "",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "npm run build -- --watch",
+        "build": "md-to-pdf --css \"h3, h4 {color: #ac0303;}\" --pdf-options \"{\\\"format\\\":\\\"A4\\\",\\\"margin\\\":\\\"20mm\\\",\\\"printBackground\\\":true}\" --highlight-style github $DIR/README.md"
     },
     "repository": {
         "type": "git",
@@ -18,6 +19,6 @@
     },
     "homepage": "https://github.com/humble-barnacle001/JU_BCSE_Internet_Technologies#readme",
     "dependencies": {
-        "md-to-pdf": "^5.0.1"
+        "md-to-pdf": "^5.0.2"
     }
 }
