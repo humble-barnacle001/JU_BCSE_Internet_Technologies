@@ -1,4 +1,4 @@
-DIR=$1 npm start
+DIR=$1 npm run build
 
 mkdir -p build/$1
 cp -r $1/img build/$1/img
