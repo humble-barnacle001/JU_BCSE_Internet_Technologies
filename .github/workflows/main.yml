@@ -4,10 +4,10 @@ on:
     push:
         branches: [main]
         paths:
-            - '**.md'
-            - '**.sh'
-            - '**.yml'
-            - '**/img/**'
+            - "**.md"
+            - "**.sh"
+            - "**.yml"
+            - "**/img/**"
     workflow_dispatch:
 
 jobs:
@@ -25,6 +25,7 @@ jobs:
               run: |
                   npm ci
                   ./runner.sh 01
+                  ./runner.sh 02
             - name: Upload a Build Artifact
               uses: actions/upload-artifact@v3
               with:
@@ -32,7 +33,7 @@ jobs:
                   path: build
 
     deploy:
-        needs: [build]
+        needs: build
         runs-on: ubuntu-latest
         steps:
             - name: Checkout main branch
