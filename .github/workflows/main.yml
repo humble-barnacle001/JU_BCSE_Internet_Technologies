@@ -26,6 +26,7 @@ jobs:
                   npm ci
                   ./runner.sh 01
                   ./runner.sh 02
+                  ./runner.sh 04
             - name: Upload a Build Artifact
               uses: actions/upload-artifact@v3
               with:
